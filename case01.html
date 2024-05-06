@@ -15,9 +15,9 @@
            position: relative;
         }
 
-        section>div:first-child{
+        section>div:nth-child(2){
             position: absolute;
-            left: 7rem;
+            left: 2rem;
             top: 18rem;
             display: flex;
         }
@@ -32,10 +32,27 @@
             position: relative;
             top: -5rem;
         }
+
+        section>div:first-child{
+            position: absolute;
+            left: 3rem;
+            top: 21rem;
+        }
+
+        .buttons{
+            width: 100px;
+            height: 50px;
+            background-color: orange;
+            border: none;
+        }
     </style>
 </head>
 <body>
     <section>
+        <div>
+            <button class="buttons" id="start">Start</button>
+            <button class="buttons" id="stop">Stop</button>
+        </div>
         <div>
             <div>
                 <div class="text">A</div>
@@ -66,5 +83,12 @@
             </div>
         </div>
     </section>
+<script src="assets/lib/jquery-3.7.1.min.js"></script>
+<script>
+
+    function walkMan(){
+
+    }
+</script>
 </body>
 </html>
